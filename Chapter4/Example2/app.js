@@ -6,7 +6,6 @@ var main = function () {
         var $newComment;
       
         if(user === 'left-user'){
-
             if ($('.left-comment-input input').val() !== '') {
                 $newComment = $('<p>').addClass('left-user')
                 .text($('.left-comment-input input').val());
@@ -16,7 +15,6 @@ var main = function () {
                 $('.left-comment-input input').val('');
             }
         }
-
         if(user === 'right-user') {
             if ($('.right-comment-input input').val() !== '') {
                 $newComment = $('<p>').addClass('right-user')
@@ -27,7 +25,6 @@ var main = function () {
                 $('.right-comment-input input').val('');
             }
         }
-
     };
 
     $('.left-comment-input button').on('click', function () {
@@ -38,13 +35,13 @@ var main = function () {
         addCommentFromInputBox('right-user');
     });
 
-    $('.left-comment-input input').on('keypress', function () {
+    $('.left-comment-input input').on('keypress', function (event) {
         if (event.keyCode === 13) {
             addCommentFromInputBox('left-user');
         }
     });
 
-    $('.right-comment-input input').on('keypress', function () {
+    $('.right-comment-input input').on('keypress', function (event) {
         if (event.keyCode === 13) {
             addCommentFromInputBox('right-user');
         }

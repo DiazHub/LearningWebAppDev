@@ -101,15 +101,30 @@ main {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+.comments p.left-user:nth-child(even) {
+    background: green;
+}
+
+.comments p.left-user:nth-child(odd) {
+    background: blue;
+}
+
+.comments p.right-user:nth-child(even) {
+    background: red;
+}
+
+.comments p.right-user:nth-child(odd) {
+    background: orange;
+}
 
 .comments .left-user {
-  background: green;
+
   color: yellow;
 }
 
 .comments .right-user {
-  background: blue;
-  color: orange;
+  
+  color: purple;
 }
 
 footer {
