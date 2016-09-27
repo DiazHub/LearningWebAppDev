@@ -50,3 +50,30 @@ footer .sitemap {
   float: right;
   width: 285px;
 }
+
+main .content {
+  float: center;
+}
+
+header h2{
+  text-align: center;
+}
+footer .contact {
+  font-family: Arial, Verdana, sans-serif;
+  text-align:   left;
+  word-spacing: 10px;
+}
+
+p.questions{
+  font-family: Arial, Verdana, sans-serif;
+  text-align:   left;
+  word-spacing: 10px;
+  color: blue;
+}
+
+p.answers{
+  font-family: Arial, Verdana, sans-serif;
+  text-align:   right;
+  word-spacing: 10px;
+  color: red;
+}
